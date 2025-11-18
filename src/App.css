@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.Republican-style {
+  font-weight: bold;
+  color: red;
+}
+
+
+.Democrat-style {
+  font-weight: bold;
+  color: blue;
+}
