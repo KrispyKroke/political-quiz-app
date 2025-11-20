@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+html {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/Users/user/Coding Projects/political-quiz-app/public/images/american-symbols-wooden-surface.jpg");
+  background-size: cover;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,6 +40,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  cursor: pointer;
+  background-color: lime;
+  border-color: black;
+  border-width: 16px;
+  color: black;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 96px;
+  border-radius: 5px;
+
 }
 
 .Republican-style {
