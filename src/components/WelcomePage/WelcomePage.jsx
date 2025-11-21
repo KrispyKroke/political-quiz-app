@@ -1,5 +1,5 @@
-import './App.css';
-import React from 'react';
+
+
 
 var statement1 = "You are a believer in equal opportunity for all, supporting a progressive tax system where the wealtiest Americans pay a higher rate.";
 var statement2 = "You are a supporter of robust social programs such as Medicare, Medicaid, and affordable health care access for all.";
@@ -15,29 +15,21 @@ var statement10 = "You favor increased military spending and a strong national d
 var quizList = [statement1, statement2, statement3, statement4, statement5, statement6, statement7, statement8, statement9, statement10];
 
 
-main();
-
-function main() {
-  quizList.sort(() => Math.random() - 0.5);  // randomly sorts the quiz questions at the start of the program
 
 
+function WelcomePage() {
+
+    quizList.sort(() => Math.random() - 0.5);  // randomly sorts the quiz questions when the Welcome Page boots up
+
+    return (
+        <div className="WelcomePage">
+            <header className="App">
+            <h1>Welcome!</h1>
+                <h3>Are you a <h2 className="Republican-style">Republican</h2> or a <h2 className="Democrat-style">Democrat</h2><header className="App"><h1>? ? ?</h1></header> Or somewhere in between?  Click the button below to find out!</h3>
+            </header>
+            <button>Start the Quiz!</button>
+        </div>
+    );
 }
 
-
-
-
-function App() {
-  return (
-    <html>
-      <div className="App">
-        <header className="App">
-          <h1>Welcome!</h1>
-            <h3>Are you a <h2 className="Republican-style">Republican</h2> or a <h2 className="Democrat-style">Democrat</h2><header className="App"><h1>? ? ?</h1></header> Or somewhere in between?  Click the button below to find out!</h3>
-        </header>
-        <button>Start the Quiz!</button>
-      </div>
-    </html>
-  );
-}
-
-export default App;
+export default WelcomePage;
